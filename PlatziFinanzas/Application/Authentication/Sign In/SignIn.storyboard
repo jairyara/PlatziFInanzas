@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aqd-qc-bSk">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w8z-4t-mwm">
+            <objects>
+                <viewController id="Aqd-qc-bSk" customClass="UITabBarController" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="fwa-cg-ifd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="sFm-UK-uKH">
+                                <rect key="frame" x="60" y="84" width="294" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="306" id="dI8-lk-3h6"/>
+                                    <constraint firstAttribute="width" secondItem="sFm-UK-uKH" secondAttribute="height" multiplier="98:51" id="rfO-1l-xJl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Et-7hY">
+                                <rect key="frame" x="0.0" y="764" width="414" height="98"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFY-NV-VZg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="phI-8Q-oDN"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h84-pk-1Ni">
+                                        <rect key="frame" x="166.66666666666666" y="30" width="81" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h84-pk-1Ni" firstAttribute="centerY" secondItem="qyy-Et-7hY" secondAttribute="centerY" id="0KE-qZ-SK5"/>
+                                    <constraint firstItem="WFY-NV-VZg" firstAttribute="leading" secondItem="qyy-Et-7hY" secondAttribute="leading" id="BZK-RB-Jq7"/>
+                                    <constraint firstAttribute="trailing" secondItem="WFY-NV-VZg" secondAttribute="trailing" id="BmU-Wd-zBD"/>
+                                    <constraint firstItem="h84-pk-1Ni" firstAttribute="centerX" secondItem="qyy-Et-7hY" secondAttribute="centerX" id="Dmp-2n-wJS"/>
+                                    <constraint firstAttribute="height" constant="98" id="ai7-pf-NfQ"/>
+                                    <constraint firstItem="WFY-NV-VZg" firstAttribute="top" secondItem="qyy-Et-7hY" secondAttribute="top" id="wNX-RW-3zR"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XdK-zE-UZ7">
+                                <rect key="frame" x="71" y="658" width="272" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxE-NR-mIF">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="56"/>
+                                        <color key="backgroundColor" name="FacebookColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="rhp-Eb-y1k"/>
+                                            <constraint firstAttribute="width" constant="80" id="wc7-eK-iaB"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xA-2m-CH5">
+                                        <rect key="frame" x="96" y="0.0" width="80" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="122-T5-koU"/>
+                                            <constraint firstAttribute="width" constant="80" id="vuM-ki-Bib"/>
+                                        </constraints>
+                                        <state key="normal" image="google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZA-gh-7xz">
+                                        <rect key="frame" x="192" y="0.0" width="80" height="56"/>
+                                        <color key="backgroundColor" name="TwitterColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="9by-Nt-T5z"/>
+                                            <constraint firstAttribute="width" constant="80" id="Ree-Qv-2eo"/>
+                                        </constraints>
+                                        <state key="normal" image="twitter">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-vv-oSE">
+                                <rect key="frame" x="160" y="606" width="94" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Sign up with">
+                                    <color key="titleColor" name="GreenColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4N-XP-yq8">
+                                <rect key="frame" x="0.0" y="262" width="414" height="240"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OlJ-qV-FiF">
+                                        <rect key="frame" x="20" y="20" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ObT-aK-KHN">
+                                        <rect key="frame" x="20" y="74" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hV-6C-1PI">
+                                        <rect key="frame" x="299" y="118" width="95" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Forgot Password">
+                                            <color key="titleColor" name="RedColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-S2-I1o">
+                                        <rect key="frame" x="20" y="174" width="374" height="46"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="htR-Pb-NVN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="5hV-6C-1PI" firstAttribute="top" secondItem="ObT-aK-KHN" secondAttribute="bottom" constant="10" id="1eb-Jr-AMq"/>
+                                    <constraint firstItem="ObT-aK-KHN" firstAttribute="top" secondItem="OlJ-qV-FiF" secondAttribute="bottom" constant="20" id="6rD-xk-gnK"/>
+                                    <constraint firstAttribute="trailing" secondItem="h1S-S2-I1o" secondAttribute="trailing" constant="20" id="70j-6l-4RJ"/>
+                                    <constraint firstAttribute="height" constant="240" id="BdV-gu-6kl"/>
+                                    <constraint firstItem="h1S-S2-I1o" firstAttribute="leading" secondItem="W4N-XP-yq8" secondAttribute="leading" constant="20" id="Ikh-6U-dR8"/>
+                                    <constraint firstItem="ObT-aK-KHN" firstAttribute="leading" secondItem="W4N-XP-yq8" secondAttribute="leading" constant="20" id="Jbn-rQ-1us"/>
+                                    <constraint firstItem="OlJ-qV-FiF" firstAttribute="top" secondItem="W4N-XP-yq8" secondAttribute="top" constant="20" id="Ll0-dU-8jy"/>
+                                    <constraint firstItem="OlJ-qV-FiF" firstAttribute="leading" secondItem="W4N-XP-yq8" secondAttribute="leading" constant="20" id="NN1-Hd-IiM"/>
+                                    <constraint firstAttribute="trailing" secondItem="5hV-6C-1PI" secondAttribute="trailing" constant="20" id="YKg-jj-KfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="ObT-aK-KHN" secondAttribute="trailing" constant="20" id="hMZ-ME-TNd"/>
+                                    <constraint firstAttribute="trailing" secondItem="OlJ-qV-FiF" secondAttribute="trailing" constant="20" id="k3e-IJ-XOM"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1S-S2-I1o" secondAttribute="bottom" constant="20" id="x5y-K8-D7U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W4N-XP-yq8" firstAttribute="top" secondItem="sFm-UK-uKH" secondAttribute="bottom" constant="25" id="CwN-iN-Exn"/>
+                            <constraint firstItem="sFm-UK-uKH" firstAttribute="centerX" secondItem="fwa-cg-ifd" secondAttribute="centerX" id="D5f-ez-7Cc"/>
+                            <constraint firstItem="qyy-Et-7hY" firstAttribute="bottom" secondItem="zo6-yb-c18" secondAttribute="bottom" id="KqT-sX-7to"/>
+                            <constraint firstItem="dsa-vv-oSE" firstAttribute="centerX" secondItem="fwa-cg-ifd" secondAttribute="centerX" id="Mv8-Ls-cBo"/>
+                            <constraint firstItem="qyy-Et-7hY" firstAttribute="leading" secondItem="zo6-yb-c18" secondAttribute="leading" id="PbK-qW-GAn"/>
+                            <constraint firstItem="sFm-UK-uKH" firstAttribute="leading" secondItem="zo6-yb-c18" secondAttribute="leading" constant="60" id="QFw-Xy-CBZ"/>
+                            <constraint firstItem="zo6-yb-c18" firstAttribute="trailing" secondItem="qyy-Et-7hY" secondAttribute="trailing" id="WDp-7B-4eo"/>
+                            <constraint firstItem="W4N-XP-yq8" firstAttribute="leading" secondItem="zo6-yb-c18" secondAttribute="leading" id="hWQ-Zt-SjL"/>
+                            <constraint firstItem="sFm-UK-uKH" firstAttribute="top" secondItem="zo6-yb-c18" secondAttribute="top" constant="40" id="hyj-D2-Zat"/>
+                            <constraint firstItem="zo6-yb-c18" firstAttribute="trailing" secondItem="W4N-XP-yq8" secondAttribute="trailing" id="iUL-Cf-ndb"/>
+                            <constraint firstItem="qyy-Et-7hY" firstAttribute="top" secondItem="XdK-zE-UZ7" secondAttribute="bottom" constant="50" id="jro-2y-hwt"/>
+                            <constraint firstItem="zo6-yb-c18" firstAttribute="trailing" secondItem="sFm-UK-uKH" secondAttribute="trailing" constant="60" id="kln-ge-CFL"/>
+                            <constraint firstItem="XdK-zE-UZ7" firstAttribute="top" secondItem="dsa-vv-oSE" secondAttribute="bottom" constant="20" id="nI7-xq-0c2"/>
+                            <constraint firstItem="XdK-zE-UZ7" firstAttribute="centerX" secondItem="fwa-cg-ifd" secondAttribute="centerX" id="sV6-v9-Ikj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zo6-yb-c18"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTk-a0-kmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.014492753623188" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="104" height="52.333332061767578"/>
+        <image name="facebook" width="9" height="17"/>
+        <image name="google" width="17" height="17"/>
+        <image name="twitter" width="19" height="15"/>
+        <namedColor name="FacebookColor">
+            <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedColor">
+            <color red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TwitterColor">
+            <color red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
